@@ -10,6 +10,7 @@
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="scripts/pub/styles/jqx.base.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -34,14 +35,19 @@
 
             <div class="row marketing">
                 <div class="col-lg-6">
-                   <div class="cluster"> <!-- change the name so not to conflict with what's in the grid-->
+                    <div id="dataGrid"></div>
+                </div>
+                <div class="col-lg-6">
+                    <input type="button" value="Add Slider" id="addWidget"/>
+                    <input type="button" value="Remove All Sliders" id="removeWidget"/>
+                    <input type="button" value="Add Row" id="addRowButton"/>
+                    <input type="button" value="Remove Row" id="removeRowButton"/>
+<!--                    <div class="cluster" style="visibility:hidden;">  -->
+                    <div class="cluster">  
                         <div class="sliderCtl"></div>
                         <div class="numericCtl"></div>
                         <input type="text" class="stringCtl"/>
-                    </div>
-                    
-                    <div id="dataGrid"></div>
-                    
+                    </div> 
                 </div>
             </div>
 
