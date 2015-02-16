@@ -90,8 +90,13 @@ body {
 
 .cluster {
     background: #CCFFCC;
+    visibility: hidden;
 }
 
 .cluster1 {
     background: grey;
+}
+
+.cluster-template {
+    visibility: hidden;
 }
